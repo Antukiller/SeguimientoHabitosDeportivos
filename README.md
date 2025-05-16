@@ -1,4 +1,4 @@
-# SeguimientoHabitosDeportivos
+🚀 Seguimiento de Hábitos Deportivos
 Un sistema para registrar, visualizar y gestionar entrenamientos deportivos, con funciones avanzadas para administradores.
 
 📌 Funcionalidades

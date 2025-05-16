@@ -1,4 +1,5 @@
 🏃 Seguimiento de Hábitos Deportivos
+
 Una aplicación de escritorio JavaFX para registrar, visualizar y gestionar entrenamientos físicos, con funcionalidades diferenciadas para usuarios normales y administradores. Implementa arquitectura MVVM, control de errores basado en Railway Oriented Programming (ROP), almacenamiento local en SQLite y soporte para importación/exportación en múltiples formatos.
 
 🚀 Funcionalidades Principales

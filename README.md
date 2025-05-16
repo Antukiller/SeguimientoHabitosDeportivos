@@ -1,40 +1,86 @@
-🚀 Seguimiento de Hábitos Deportivos
-Un sistema para registrar, visualizar y gestionar entrenamientos deportivos, con funciones avanzadas para administradores.
+🏃 Seguimiento de Hábitos Deportivos
+Una aplicación de escritorio JavaFX para registrar, visualizar y gestionar entrenamientos físicos, con funcionalidades diferenciadas para usuarios normales y administradores. Implementa arquitectura MVVM, control de errores basado en Railway Oriented Programming (ROP), almacenamiento local en SQLite y soporte para importación/exportación en múltiples formatos.
 
-📌 Funcionalidades
+🚀 Funcionalidades Principales
 🔹 Usuario Normal
-Registrar entrenamientos (tipo de actividad, duración, calorías quemadas, distancia recorrida).
+📝 Registro de entrenamientos
+Añadir datos sobre actividades deportivas:
 
-Visualizar estadísticas personales: promedio de minutos entrenados, calorías quemadas y frecuencia de entrenamiento.
+Tipo de actividad (carrera, ciclismo, natación, etc.)
 
-Filtrar entrenamientos por fecha, tipo de actividad o duración.
+Duración (en minutos)
 
-Imprimir historial en HTML.
+Calorías quemadas
 
-Importar datos en CSV y JSON.
+Distancia recorrida
+
+📊 Visualización de estadísticas personales
+
+Promedio de minutos entrenados
+
+Promedio de calorías quemadas
+
+Frecuencia de entrenamiento semanal/mensual
+
+🔍 Filtrado y búsqueda de entrenamientos
+
+Por fecha
+
+Por tipo de actividad
+
+Por duración
+
+🖨️ Impresión de historial en HTML
+Generación de un historial visualmente atractivo, listo para imprimir o guardar.
+
+📥 Importación de datos
+
+Desde archivos .csv y .json
 
 🔹 Usuario Administrador
-Modificar registros de entrenamiento.
+El modo administrador requiere inicio de sesión (login) para acceder a funciones avanzadas. Las credenciales están cifradas con bcrypt y almacenadas en la base de datos.
 
-Gestionar la base de datos de ejercicios disponibles.
+✏️ Modificación y eliminación de entrenamientos existentes
 
-Configurar categorías de entrenamiento.
+⚙️ Gestión de ejercicios disponibles
 
-Exportar datos en múltiples formatos, incluyendo ZIP para respaldos.
+Crear, editar o eliminar tipos de actividad
 
-🔐 Control de Acceso
-Sin creación de cuentas. Solo login para admin cuando sea necesario.
+🗂️ Configuración de categorías de entrenamiento personalizadas
 
-Los usuarios ya están registrados en una tabla usuarios, con contraseña cifrada en bcrypt.
+📤 Exportación de datos
 
-La visibilidad de elementos se controla según el rol del usuario.
+A formatos .json, .csv y .zip (para respaldos)
 
-🔄 Gestión de Sesión
-Objeto Sesion para almacenar el usuario actual.
+🔐 Acceso restringido por rol
 
-Activación/desactivación de funciones según el rol.
+Los botones, menús y acciones avanzadas solo se activan si el usuario es administrador
+
+🔐 Control de Acceso y Sesión
+📛 No hay creación de cuentas
+Los usuarios están predefinidos en la base de datos (usuarios), con su rol y contraseña encriptada.
+
+👤 Sistema de sesión con objeto Sesion
+Almacena el usuario actual e informa al sistema si el rol es admin.
+
+👁️‍🗨️ Visibilidad dinámica
+El sistema activa o desactiva componentes de la interfaz en función del rol del usuario (normal o admin).
+
+📦 Estructura Técnica
+🏗️ Arquitectura: MVVM
+
+💾 Almacenamiento local: SQLite
+
+📚 Serialización: Gson
+
+🧪 Control de errores: Railway Oriented Programming (ROP)
+
+🧪 Tests unitarios completos (excepto controladores de vista)
 
 🖼️ Requisitos Adicionales
-Imágenes de cada usuario y ejercicios disponibles.
+📷 Cada usuario y tipo de ejercicio cuenta con una imagen asociada.
 
-Tests completos (excepto los controladores).
+🔄 Splash Screen inicial incluido.
+
+💻 App multiplataforma, diseño adaptable.
+
